@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: blanchedalmond;
+    
+}
+
+body {
+    background-color: rgb(47, 47, 47);
+}
+
+.mainDiv {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    border: 2px solid black;
+    background-color: black;
+    box-shadow: 0px 0px 20px 0px rgb(174, 174, 174);
+    border-radius: 30px;
+
+}
+.container h1{
+    font-size: 3em;
+}
+.container div {
+    margin: 25px;
+}
+
+.points-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.points-table div {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgb(174, 135, 35);
+    padding: 10px;
+}
+
+.points-table div h3 {
+    font-size: 1.5em;
+}
+
+.SdivCmn {
+    transition: all 1s ease;
+}
+
+.mainDiv div {
+    justify-items: center;
+}
+
+.btn{
+    width: 8em;
+    padding: 10px;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0px 0px 5px 0px white;
+    font-size: 1em;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 10px 0px cyan;
+    transform: scale(1.1);
+}

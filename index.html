@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="mainDiv">
+        <div class="container">
+            <h1>Rock Paper Scissor</h1>
+
+            <div class="points-table">
+                <div id="hsdiv" class="SdivCmn">
+                    <h3>Human Score</h3>
+                    <h1 id="Hpoints">0</h1>
+                </div>
+                <div id="csdiv" class="SdivCmn">
+                    <h3>Computer Score</h3>
+                    <h1 id="Cpoints">0</h1>
+                </div>
+            </div>
+
+            <div>
+                <h2>Computer's Choice</h2>
+                <h3 id="computerChoicePrint">-</h3>
+            </div>
+            <div>
+                <h4 id="roundResultPrint">-</h4>
+            </div>
+
+            <div>
+                <h3 id="scorePrint">-</h3>
+            </div>
+
+            <div>
+                <button onclick="clicked(0)" class="btn">Rock</button>
+                <button onclick="clicked(1)" class="btn">Paper</button>
+                <button onclick="clicked(2)" class="btn">Scissors</button>
+            </div>
+            <div>
+                <button onclick="reset()" style="display: none;" id="reset">Play Again</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
