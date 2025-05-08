@@ -37,13 +37,13 @@ function clicked(a) {
             document.getElementById("reset").style.display = "block";
             document.getElementById("reset").classList.add("btn")
             if (Hpoints > Cpoints) {
-                document.getElementById("scorePrint").innerHTML = "Congrats! You Won,But You Couldn't Win Her Heart";
+                document.getElementById("scorePrint").innerHTML = "Victory! You Outsmarted The Computer!";
                 removeHSCss();
                 removeCSCss();
                 return;
             }
             else {
-                document.getElementById("scorePrint").innerHTML = "You Lost! Just Like You Lost Her";
+                document.getElementById("scorePrint").innerHTML = "the machine wins... but not for long, right?";
                 removeHSCss();
                 removeCSCss();
                 return;
