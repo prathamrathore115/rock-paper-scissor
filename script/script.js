@@ -5,9 +5,13 @@ let Cpoints = 0;
 
 function clicked(a) {
     chances--;
+    if (chances < 0) {
+        return;
+    }
     const humanChoice = a;
     const computerChoice = Math.floor(Math.random() * 3);
     document.getElementById("computerChoicePrint").innerHTML = getComputerChoice(computerChoice);
+
     {
         let rndResult = document.getElementById("roundResultPrint");
         let Hscore = document.getElementById("Hpoints");
@@ -33,7 +37,7 @@ function clicked(a) {
     }
 
     {
-        if (chances <= 0) {
+        if (chances == 0) {
             document.getElementById("reset").style.display = "block";
             document.getElementById("reset").classList.add("btn")
             if (Hpoints > Cpoints) {
